@@ -13,6 +13,7 @@ BuildRequires:	expat-devel >= 1.95
 BuildRequires:	freexl-devel
 BuildRequires:	geos-devel
 BuildRequires:	libspatialite-devel
+BuildRequires:	pkgconfig
 BuildRequires:	proj-devel >= 4
 BuildRequires:	readline-devel
 BuildRequires:	readosm-devel
