@@ -2,7 +2,7 @@ Summary:	Collection of CLI utilities supporting SpatiaLite
 Summary(pl.UTF-8):	Zestaw narzędzi linii poleceń obsługujących bazy SpatiaLite
 Name:		spatialite-tools
 Version:	3.1.0b
-Release:	1
+Release:	2
 License:	GPL v3+
 Group:		Applications/Databases
 Source0:	http://www.gaia-gis.it/gaia-sins/spatialite-tools-sources/%{name}-%{version}.tar.gz
