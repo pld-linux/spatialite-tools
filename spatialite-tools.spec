@@ -1,12 +1,12 @@
 Summary:	Collection of CLI utilities supporting SpatiaLite
 Summary(pl.UTF-8):	Zestaw narzędzi linii poleceń obsługujących bazy SpatiaLite
 Name:		spatialite-tools
-Version:	4.0.0
-Release:	2
+Version:	4.1.0
+Release:	1
 License:	GPL v3+
 Group:		Applications/Databases
 Source0:	http://www.gaia-gis.it/gaia-sins/spatialite-tools-sources/%{name}-%{version}.tar.gz
-# Source0-md5:	2eab56d3a91ae872d985e32a3623ec6f
+# Source0-md5:	83a9dc3b001b9c220557659960bd8e4c
 URL:		https://www.gaia-gis.it/fossil/spatialite-tools
 BuildRequires:	expat-devel >= 1.95
 BuildRequires:	freexl-devel
