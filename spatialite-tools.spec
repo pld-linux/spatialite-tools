@@ -1,23 +1,26 @@
 Summary:	Collection of CLI utilities supporting SpatiaLite
 Summary(pl.UTF-8):	Zestaw narzędzi linii poleceń obsługujących bazy SpatiaLite
 Name:		spatialite-tools
-Version:	4.3.0
-Release:	3
+Version:	5.0.0
+Release:	1
 License:	GPL v3+
 Group:		Applications/Databases
 Source0:	http://www.gaia-gis.it/gaia-sins/spatialite-tools-sources/%{name}-%{version}.tar.gz
-# Source0-md5:	83cb7b1f6c6b20fe5475586f1fb77088
+# Source0-md5:	e7a836fe205431c233fbf2f05ac0fcd0
 URL:		https://www.gaia-gis.it/fossil/spatialite-tools
 BuildRequires:	expat-devel >= 1.95
 BuildRequires:	freexl-devel
 BuildRequires:	geos-devel
+BuildRequires:	librttopo-devel
 BuildRequires:	libspatialite-devel
 BuildRequires:	libxml2-devel >= 2.0
+BuildRequires:	minizip-devel
 BuildRequires:	pkgconfig
 BuildRequires:	proj-devel >= 4
 BuildRequires:	readline-devel
-BuildRequires:	readosm-devel
+BuildRequires:	readosm-devel >= 1.1.0
 BuildRequires:	sqlite3-devel >= 3
+Requires:	readosm >= 1.1.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -48,4 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS
 %attr(755,root,root) %{_bindir}/exif_loader
 %attr(755,root,root) %{_bindir}/shp_doctor
+%attr(755,root,root) %{_bindir}/shp_sanitize
 %attr(755,root,root) %{_bindir}/spatialite*
